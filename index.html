@@ -47,7 +47,7 @@
             </div>
             <div class="hidden md:flex items-center gap-2 text-xs text-slate-400 bg-white/5 px-3 py-1.5 rounded-full border border-white/5">
                 <i data-lucide="mouse-pointer" class="w-4 h-4 animate-bounce"></i>
-                <span>Usa la rueda del ratón para navegar</span>
+                <span>Usa las flechas para navegar</span>
             </div>
         </div>
 
@@ -171,25 +171,6 @@
 
         // Control de Desplazamiento Horizontal con Rueda del Ratón
         const scrollContainer = document.getElementById('scroll-container');
-
-        scrollContainer.addEventListener('wheel', (evt) => {
-            // Si el gesto es principalmente horizontal (trackpad), dejar el comportamiento nativo
-            if (Math.abs(evt.deltaX) > Math.abs(evt.deltaY)) {
-                return;
-            }
-
-            const atStart = scrollContainer.scrollLeft <= 0;
-            const atEnd = scrollContainer.scrollLeft >= scrollContainer.scrollWidth - scrollContainer.clientWidth - 1;
-
-            // Si el carrusel ya llegó al principio o al final, dejar que la página
-            // haga scroll vertical normalmente en vez de bloquearlo
-            if ((evt.deltaY < 0 && atStart) || (evt.deltaY > 0 && atEnd)) {
-                return;
-            }
-
-            scrollContainer.scrollLeft += evt.deltaY * 1.5;
-            evt.preventDefault();
-        }, { passive: false });
 
         // Flechas de navegación
         const scrollLeftBtn = document.getElementById('scroll-left');
