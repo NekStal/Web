@@ -1,191 +1,35 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <link rel="icon" type="image/png" href="/favicon.png">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>&lt;Game/&gt; - Descarga Juegos y Apps Gratis</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/lucide@0.469.0"></script>
-    <style>
-        /* Ocultar barra de desplazamiento manteniendo la funcionalidad */
-        .no-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-        .no-scrollbar {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-        /* Efecto de fondo animado */
-        .radial-bg {
-            background: radial-gradient(circle at 50% 50%, #1e1b4b 0%, #090514 100%);
-        }
-    </style>
-</head>
-<body class="radial-bg text-slate-100 min-h-screen flex flex-col justify-between font-sans">
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Política de privacidad – Chinchón 3D</title>
+<style>body{font:16px/1.6 Georgia,serif;max-width:720px;margin:0 auto;padding:24px;color:#222}h1,h2{color:#6b4a00}</style></head>
+<body>
+<h1>Política de privacidad – Chinchón 3D</h1>
+<p>Última actualización: 10 de noviembre de 2026</p>
+<p><b>Responsable:</b> [NekStal] · Contacto: [nekstalxeela@gmail.com]</p>
 
-    <header class="px-8 py-6 flex justify-between items-center z-10">
-        <div class="flex items-center gap-2">
-            <div class="bg-gradient-to-tr from-violet-600 to-fuchsia-600 p-2 rounded-lg shadow-lg shadow-fuchsia-500/30">
-                <i data-lucide="gamepad-2" class="w-6 h-6 text-white"></i>
-            </div>
-            <span class="text-2xl font-black tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-fuchsia-500">
-                &lt;Game/&gt;
-            </span>
-        </div>
-        <nav class="flex items-center gap-8 text-sm font-medium text-slate-400">
-            <a href="#" class="hover:text-white transition-colors duration-300">Inicio</a>
-            <a href="#" class="hover:text-white transition-colors duration-300">Juegos</a>
-            <a href="#" class="hover:text-white transition-colors duration-300">Apps</a>
-        </nav>
-    </header>
+<h2>Resumen</h2>
+<p>Chinchón 3D no tiene cuentas, anuncios, compras ni herramientas de analítica. No vendemos ni compartimos tus datos con terceros con fines publicitarios.</p>
 
-    <main class="flex-1 flex flex-col justify-center py-6">
-        <div class="px-12 mb-4 flex justify-between items-end">
-            <div>
-                <span class="text-xs font-bold tracking-widest text-fuchsia-500 uppercase">Proyectos Destacados</span>
-                <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight mt-1">Explora mis Creaciones</h1>
-            </div>
-            <div class="hidden md:flex items-center gap-2 text-xs text-slate-400 bg-white/5 px-3 py-1.5 rounded-full border border-white/5">
-                <i data-lucide="mouse-pointer" class="w-4 h-4 animate-bounce"></i>
-                <span>Usa las flechas para navegar</span>
-            </div>
-        </div>
+<h2>Datos que se guardan en tu dispositivo</h2>
+<p>El juego guarda localmente: tu nombre de jugador, una foto de perfil opcional, un identificador aleatorio, tu progreso (experiencia, rango, niveles de Aventura, estadísticas), tu lista de amigos y tus ajustes (volumen, tamaño de cartas, personalización). Estos datos no salen de tu dispositivo, salvo lo indicado en la sección siguiente. Puedes borrarlos desinstalando la app o desde Ajustes de Android → Aplicaciones → Chinchón 3D → Almacenamiento → Borrar datos.</p>
 
-        <div class="relative">
-            <button id="scroll-left" aria-label="Desplazar a la izquierda" class="absolute left-2 top-1/2 -translate-y-1/2 z-30 bg-slate-900/80 hover:bg-fuchsia-600 border border-white/20 hover:border-fuchsia-400 text-white p-3 rounded-full shadow-lg backdrop-blur-sm transition-all duration-300 hover:scale-110">
-                <i data-lucide="chevron-left" class="w-5 h-5"></i>
-            </button>
-            <button id="scroll-right" aria-label="Desplazar a la derecha" class="absolute right-2 top-1/2 -translate-y-1/2 z-30 bg-slate-900/80 hover:bg-fuchsia-600 border border-white/20 hover:border-fuchsia-400 text-white p-3 rounded-full shadow-lg backdrop-blur-sm transition-all duration-300 hover:scale-110">
-                <i data-lucide="chevron-right" class="w-5 h-5"></i>
-            </button>
-        <div id="scroll-container" class="flex gap-8 overflow-x-auto px-12 py-8 no-scrollbar scroll-smooth snap-x snap-mandatory">
+<h2>Modo multijugador con amigos</h2>
+<p>Si usas las salas para jugar con un amigo, el juego establece una conexión directa entre dispositivos (WebRTC) mediante el servicio PeerJS. Para ello:</p>
+<ul>
+<li>El servicio de señalización de PeerJS (0.peerjs.com) y los servidores STUN usados para conectar los dispositivos pueden ver tu dirección IP y el código de sala durante la conexión.</li>
+<li>Tu amigo recibe, directamente de tu dispositivo, tu nombre, tu foto de perfil (si la configuraste), tu identificador aleatorio y datos de tu progreso para mostrar el ranking entre amigos.</li>
+</ul>
+<p>Nosotros no operamos servidores propios ni almacenamos estos datos. El modo contra la computadora y el modo Aventura funcionan sin conexión.</p>
 
-            <div class="min-w-[300px] md:min-w-[420px] bg-slate-900/60 rounded-3xl p-6 border-2 border-fuchsia-500/30 backdrop-blur-lg flex flex-col justify-between snap-start transform transition-all duration-500 hover:-translate-y-3 hover:border-fuchsia-500 hover:shadow-2xl hover:shadow-fuchsia-500/20 group">
-                <div>
-                    <div class="relative w-full h-48 md:h-56 rounded-2xl overflow-hidden mb-6 bg-slate-800">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent z-10"></div>
-                        <img src="30324.png" alt="Nekrosynk Logo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-                        <span class="absolute top-4 left-4 bg-gradient-to-r from-amber-500 to-orange-600 text-xs font-bold px-3 py-1 rounded-full z-20 shadow-md">¡NUEVO JUEGO!</span>
-                    </div>
-                    <h2 class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-fuchsia-400 group-hover:from-white group-hover:to-fuchsia-400 transition-colors">Nekrosynk</h2>
-                    <p class="text-sm text-slate-400 mt-2 line-clamp-3">Sobrevive a hordas interminables de zombis en este roguelike de arena. Elegí tu guerrero, subí de nivel, desbloqueá mejoras permanentes y enfrentá jefes en solitario o en dúo local.</p>
-                </div>
-                <div class="flex items-center justify-between mt-8 pt-4 border-t border-white/5">
-                    <span class="text-xs text-slate-500 font-mono">v1.0.0 • Roguelike / Supervivencia</span>
-                    <a href="https://NekStal.github.io/NekrosynK/" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-r from-amber-500 to-fuchsia-600 hover:from-amber-400 hover:to-fuchsia-500 text-white px-5 py-2.5 rounded-full shadow-lg shadow-fuchsia-500/20 transition-all duration-300 hover:scale-105 font-bold flex items-center gap-2">
-                        <span>Jugar</span>
-                        <i data-lucide="play" class="w-4 h-4 fill-current" stroke="none"></i>
-                    </a>
-                </div>
-            </div>
+<h2>Permisos</h2>
+<p>La app solo necesita acceso a internet (para el modo con amigos). No accede a tu ubicación, contactos, micrófono ni cámara. La foto de perfil se elige desde tus archivos mediante el selector del sistema.</p>
 
-            <div class="min-w-[300px] md:min-w-[420px] bg-slate-900/60 rounded-3xl p-6 border border-white/10 backdrop-blur-lg flex flex-col justify-between snap-start transform transition-all duration-500 hover:-translate-y-3 hover:border-fuchsia-500/50 hover:shadow-2xl hover:shadow-fuchsia-500/10 group">
-                <div>
-                    <div class="relative w-full h-48 md:h-56 rounded-2xl overflow-hidden mb-6 bg-slate-800">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent z-10"></div>
-                        <img src="20957.png" alt="STALK_OW Logo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-                        <span class="absolute top-4 left-4 bg-violet-600/90 text-xs font-bold px-3 py-1 rounded-full z-20 backdrop-blur-sm">JUEGO</span>
-                    </div>
-                    <h2 class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-fuchsia-400 group-hover:from-white group-hover:to-fuchsia-400 transition-colors">STALK_OW</h2>
-                    <p class="text-sm text-slate-400 mt-2 line-clamp-3">Explora y sobrevive en un entorno urbano interactivo en este juego de simulación y supervivencia cenital. Gestiona tus niveles de salud, hambre y sed, gana dinero, sube de nivel y utiliza tu teléfono móvil integrado para descargar apps clave que te ayudarán a dominar las calles.</p>
-                </div>
-                <div class="flex items-center justify-between mt-8 pt-4 border-t border-white/5">
-                    <span class="text-xs text-slate-500 font-mono">v1.0.0 • Simulación / Supervivencia</span>
-                    <a href="https://NekStal.github.io/STALK_OW/" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-r from-amber-500 to-fuchsia-600 hover:from-amber-400 hover:to-fuchsia-500 text-white px-5 py-2.5 rounded-full shadow-lg shadow-fuchsia-500/20 transition-all duration-300 hover:scale-105 font-bold flex items-center gap-2">
-                        <span>Jugar</span>
-                        <i data-lucide="play" class="w-4 h-4 fill-current" stroke="none"></i>
-                    </a>
-                </div>
-            </div>
+<h2>Menores</h2>
+<p>El juego es una versión digital de un juego de cartas tradicional, sin apuestas ni dinero real. No recopilamos conscientemente datos personales de menores en nuestros servidores, porque no tenemos ninguno.</p>
 
-            <div class="min-w-[300px] md:min-w-[420px] bg-slate-900/60 rounded-3xl p-6 border border-white/10 backdrop-blur-lg flex flex-col justify-between snap-start transform transition-all duration-500 hover:-translate-y-3 hover:border-violet-500/50 hover:shadow-2xl hover:shadow-violet-500/10 group">
-                <div>
-                    <div class="relative w-full h-48 md:h-56 rounded-2xl overflow-hidden mb-6 bg-slate-800">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent z-10"></div>
-                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=600&q=80" alt="Cyber Run" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-                        <span class="absolute top-4 left-4 bg-violet-600/90 text-xs font-bold px-3 py-1 rounded-full z-20 backdrop-blur-sm">JUEGO</span>
-                    </div>
-                    <h2 class="text-2xl font-bold group-hover:text-violet-400 transition-colors">Cyber Run 2099</h2>
-                    <p class="text-sm text-slate-400 mt-2 line-clamp-2">Un runner infinito de estética cyberpunk con físicas de gravedad invertida y banda sonora synthwave original.</p>
-                </div>
-                <div class="flex items-center justify-between mt-8 pt-4 border-t border-white/5">
-                    <span class="text-xs text-slate-500 font-mono">v1.2.0 • WebGL / Windows</span>
-                    <a href="#" aria-label="Descargar Cyber Run 2099" class="bg-gradient-to-r from-violet-600 to-fuchsia-600 hover:from-violet-500 hover:to-fuchsia-500 text-white p-3 rounded-full shadow-lg shadow-fuchsia-500/20 transition-transform duration-300 hover:scale-110">
-                        <i data-lucide="download" class="w-5 h-5"></i>
-                    </a>
-                </div>
-            </div>
+<h2>Tus derechos</h2>
+<p>Como no almacenamos tus datos en servidores propios, puedes ejercer el control total borrando los datos de la app. Para cualquier consulta escribe a [TU EMAIL].</p>
 
-            <div class="min-w-[300px] md:min-w-[420px] bg-slate-900/60 rounded-3xl p-6 border border-white/10 backdrop-blur-lg flex flex-col justify-between snap-start transform transition-all duration-500 hover:-translate-y-3 hover:border-fuchsia-500/50 hover:shadow-2xl hover:shadow-fuchsia-500/10 group">
-                <div>
-                    <div class="relative w-full h-48 md:h-56 rounded-2xl overflow-hidden mb-6 bg-slate-800">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent z-10"></div>
-                        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80" alt="Sintetizador" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-                        <span class="absolute top-4 left-4 bg-fuchsia-600/90 text-xs font-bold px-3 py-1 rounded-full z-20 backdrop-blur-sm">APLICACIÓN</span>
-                    </div>
-                    <h2 class="text-2xl font-bold group-hover:text-fuchsia-400 transition-colors">NeonSynth Studio</h2>
-                    <p class="text-sm text-slate-400 mt-2 line-clamp-2">Sintetizador de bolsillo polifónico con secuenciador de 16 pasos y efectos en tiempo real.</p>
-                </div>
-                <div class="flex items-center justify-between mt-8 pt-4 border-t border-white/5">
-                    <span class="text-xs text-slate-500 font-mono">v0.9.5 • MacOS / Web</span>
-                    <a href="#" aria-label="Descargar NeonSynth Studio" class="bg-gradient-to-r from-violet-600 to-fuchsia-600 hover:from-violet-500 hover:to-fuchsia-500 text-white p-3 rounded-full shadow-lg shadow-fuchsia-500/20 transition-transform duration-300 hover:scale-110">
-                        <i data-lucide="download" class="w-5 h-5"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="min-w-[300px] md:min-w-[420px] bg-slate-900/60 rounded-3xl p-6 border border-white/10 backdrop-blur-lg flex flex-col justify-between snap-start transform transition-all duration-500 hover:-translate-y-3 hover:border-violet-500/50 hover:shadow-2xl hover:shadow-violet-500/10 group">
-                <div>
-                    <div class="relative w-full h-48 md:h-56 rounded-2xl overflow-hidden mb-6 bg-slate-800">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent z-10"></div>
-                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=600&q=80" alt="Shadow Dungeon" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-                        <span class="absolute top-4 left-4 bg-violet-600/90 text-xs font-bold px-3 py-1 rounded-full z-20 backdrop-blur-sm">JUEGO</span>
-                    </div>
-                    <h2 class="text-2xl font-bold group-hover:text-violet-400 transition-colors">Shadow Dungeon</h2>
-                    <p class="text-sm text-slate-400 mt-2 line-clamp-2">Roguelike clásico con generación procedimental de mazmorras y un sistema de combate táctico por turnos.</p>
-                </div>
-                <div class="flex items-center justify-between mt-8 pt-4 border-t border-white/5">
-                    <span class="text-xs text-slate-500 font-mono">v2.0.1 • Android / iOS</span>
-                    <a href="#" aria-label="Descargar Shadow Dungeon" class="bg-gradient-to-r from-violet-600 to-fuchsia-600 hover:from-violet-500 hover:to-fuchsia-500 text-white p-3 rounded-full shadow-lg shadow-fuchsia-500/20 transition-transform duration-300 hover:scale-110">
-                        <i data-lucide="download" class="w-5 h-5"></i>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-        </div>
-    </main>
-
-    <footer class="px-12 py-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500 border-t border-white/5 bg-slate-950/20 backdrop-blur-sm z-10">
-        <div>
-            &copy; 2026 <a href="https://github.com/NekStal" target="_blank" rel="noopener noreferrer" class="font-bold text-slate-400 hover:text-white transition-colors">&lt;Game/&gt;</a>. Todos los derechos reservados.
-        </div>
-        <div class="flex gap-6">
-            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Github</a>
-        </div>
-    </footer>
-
-    <script>
-        // Inicializar iconos de Lucide
-        lucide.createIcons();
-
-        // Control de Desplazamiento Horizontal con Rueda del Ratón
-        const scrollContainer = document.getElementById('scroll-container');
-
-        // Flechas de navegación
-        const scrollLeftBtn = document.getElementById('scroll-left');
-        const scrollRightBtn = document.getElementById('scroll-right');
-        const scrollAmount = 440;
-
-        scrollLeftBtn.addEventListener('click', () => {
-            scrollContainer.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-        });
-
-        scrollRightBtn.addEventListener('click', () => {
-            scrollContainer.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-        });
-    </script>
-</body>
-</html>
-
+<h2>Cambios</h2>
+<p>Si esta política cambia, publicaremos la nueva versión en esta misma página.</p>
+</body></html>
